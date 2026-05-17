@@ -83,8 +83,6 @@ behavior.
   magnitude due to overestimated resonance self-shielding
 - Stochastic pebble packing produces run-to-run geometry 
   variation; results reflect a single packing realization
-- Control rods modeled geometrically but not exercised in 
-  this analysis
 
 ## Tools & Libraries
 - [OpenMC](https://openmc.org) Monte Carlo particle transport code
