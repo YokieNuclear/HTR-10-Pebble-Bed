@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="1" name="UO2 Kernel" temperature="1000">
+    <density units="atom/b-cm" value="0.0671"/>
+    <nuclide ao="0.0038228" name="U235"/>
+    <nuclide ao="0.018612" name="U238"/>
+    <nuclide ao="0.04487" name="O16"/>
+  </material>
+  <material id="2" name="Buffer PyC" temperature="900">
+    <density units="g/cm3" value="1.05"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material id="3" name="Inner PyC" temperature="900">
+    <density units="g/cm3" value="1.9"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material id="4" name="SiC" temperature="900">
+    <density units="g/cm3" value="3.18"/>
+    <nuclide ao="0.9222968" name="Si28"/>
+    <nuclide ao="0.0468316" name="Si29"/>
+    <nuclide ao="0.0308716" name="Si30"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material id="5" name="Outer PyC" temperature="900">
+    <density units="g/cm3" value="1.9"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material id="6" name="Matrix Graphite" temperature="900">
+    <density units="g/cm3" value="1.73"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material id="7" name="Shell Graphite" temperature="850">
+    <density units="g/cm3" value="1.73"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material id="8" name="Helium Coolant" temperature="750">
+    <density units="g/cm3" value="0.000164"/>
+    <nuclide ao="2e-06" name="He3"/>
+    <nuclide ao="0.999998" name="He4"/>
+  </material>
+  <material id="9" name="Reflector Graphite" temperature="600">
+    <density units="g/cm3" value="1.76"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+  <material depletable="true" id="10" name="Homogenized Fuel" temperature="900">
+    <density units="atom/b-cm" value="0.08202876466676313"/>
+    <nuclide ao="3.186303800000001e-05" name="U235"/>
+    <nuclide ao="0.00015513102000000003" name="U238"/>
+    <nuclide ao="0.0003739914500000001" name="O16"/>
+    <nuclide ao="0.08146777915876313" name="C12"/>
+  </material>
+  <material id="11" name="B4C Absorber" temperature="600">
+    <density units="g/cm3" value="2.52"/>
+    <nuclide ao="0.7928" name="B10"/>
+    <nuclide ao="3.2072" name="B11"/>
+    <nuclide ao="0.988922" name="C12"/>
+    <nuclide ao="0.011078" name="C13"/>
+  </material>
+</materials>

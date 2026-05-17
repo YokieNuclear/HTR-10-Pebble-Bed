@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <!--axial-->
+  <mesh id="1" name="axial">
+    <dimension>1 1 20</dimension>
+    <lower_left>-90.0 -90.0 -98.5</lower_left>
+    <upper_right>90.0 90.0 98.5</upper_right>
+  </mesh>
+  <!--radial-->
+  <mesh id="2" name="radial" type="cylindrical">
+    <r_grid>0.0 6.0 12.0 18.0 24.0 30.0 36.0 42.0 48.0 54.0 60.0 66.0 72.0 78.0 84.0 90.0</r_grid>
+    <phi_grid>0.0 6.283185307179586</phi_grid>
+    <z_grid>-98.5 98.5</z_grid>
+    <origin>0.0 0.0 0.0</origin>
+  </mesh>
+  <!--rz_map-->
+  <mesh id="3" name="rz_map" type="cylindrical">
+    <r_grid>0.0 6.8 13.6 20.4 27.2 34.0 40.8 47.6 54.4 61.199999999999996 68.0 74.8 81.6 88.39999999999999 95.2 102.0 108.8 115.6 122.39999999999999 129.2 136.0 142.79999999999998 149.6 156.4 163.2 170.0</r_grid>
+    <phi_grid>0.0 6.283185307179586</phi_grid>
+    <z_grid>-98.5 -93.575 -88.65 -83.725 -78.8 -73.875 -68.95 -64.025 -59.1 -54.175000000000004 -49.25 -44.325 -39.400000000000006 -34.47500000000001 -29.549999999999997 -24.625 -19.700000000000003 -14.775000000000006 -9.850000000000009 -4.924999999999997 0.0 4.924999999999997 9.849999999999994 14.774999999999991 19.69999999999999 24.625 29.549999999999983 34.474999999999994 39.400000000000006 44.32499999999999 49.25 54.17499999999998 59.099999999999994 64.025 68.94999999999999 73.875 78.79999999999998 83.725 88.65 93.57499999999999 98.5</z_grid>
+    <origin>0.0 0.0 0.0</origin>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <filter id="2" type="mesh">
+    <bins>2</bins>
+  </filter>
+  <filter id="3" type="energy">
+    <bins>0.0 0.625 5530.0 100000.0 1000000.0 8000000.0 20000000.0</bins>
+  </filter>
+  <filter id="4" type="mesh">
+    <bins>3</bins>
+  </filter>
+  <filter id="5" type="energy">
+    <bins>0.0 0.625 20000000.0</bins>
+  </filter>
+  <tally id="1" name="axial_flux">
+    <filters>1</filters>
+    <scores>flux fission</scores>
+  </tally>
+  <tally id="2" name="radial_flux">
+    <filters>2</filters>
+    <scores>flux fission</scores>
+  </tally>
+  <tally id="3" name="energy_spectrum">
+    <filters>3</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="4" name="rz_flux_map">
+    <filters>4 5</filters>
+    <scores>flux</scores>
+  </tally>
+</tallies>
