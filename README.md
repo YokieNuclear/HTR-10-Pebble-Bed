@@ -60,7 +60,6 @@ R-z flux maps computed for thermal and fast energy groups:
 
 ![HTR-10 Geometry](images/geometry.png)
 ![R-Z Flux Map](images/flux_map_rz.png)
-![3D Flux Map](images/screenshot.png)
 
 ### Doppler Reactivity Coefficient
 Fuel temperature varied from 600 K to 1200 K in five steps.
